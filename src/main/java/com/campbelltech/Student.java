@@ -1,6 +1,6 @@
 package com.campbelltech;
 
-// ConcretePrototype1
+// ConcretePrototype2
 public class Student extends Person {
     private Teacher teacher;
 
@@ -23,13 +23,4 @@ public class Student extends Person {
         studentCopy.setTeacher(new Teacher(studentCopy.getTeacher().getName(), studentCopy.getTeacher().getCourse()));
         return studentCopy;
     }
-
-    @Override
-    public String toString() {
-        return "Student{" +
-                "firstname='" + name + '\'' +
-                ",teacher=" + teacher +
-                '}';
-    }
-
 }

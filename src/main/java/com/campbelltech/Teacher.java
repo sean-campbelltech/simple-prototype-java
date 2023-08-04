@@ -12,12 +12,4 @@ public class Teacher extends Person {
     public String getCourse() {
         return course;
     }
-
-    @Override
-    public String toString() {
-        return "Teacher{" +
-                "name='" + name + '\'' +
-                "course='" + course + '\'' +
-               '}';
-    }
 }

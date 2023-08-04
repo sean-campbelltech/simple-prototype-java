@@ -2,7 +2,7 @@ package com.campbelltech;
 
 // Prototype
 public abstract class Person implements Cloneable {
-    protected String name;
+    private String name;
 
     protected Person(String name) {
         this.name = name;
