@@ -4,7 +4,7 @@ package com.campbelltech;
 public abstract class Person implements Cloneable {
     protected String name;
 
-    public Person(String name) {
+    protected Person(String name) {
         this.name = name;
     }
 
@@ -16,17 +16,13 @@ public abstract class Person implements Cloneable {
         this.name = name;
     }
 
-    public Object clone()
-    {
-        Object clone = null;
-        try
-        {
-            clone = super.clone();
+    public Person clone() {
+        try {
+            return (Person)super.clone();
         }
-        catch (CloneNotSupportedException e)
-        {
+        catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
-        return clone;
+        return null;
     }
 }
